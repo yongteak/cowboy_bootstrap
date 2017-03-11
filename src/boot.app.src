@@ -1,0 +1,26 @@
+{application, boot,
+[{description, "Cowboy Bootstrap"},
+  {vsn, "0.1.0"},
+  {registered, []},
+  {applications, [
+    kernel,
+    stdlib,
+    sasl,
+    ssl,
+    os_mon,
+    runtime_tools,
+    crypto,
+    inets,
+    xmerl,
+    public_key,
+    syntax_tools,
+    compiler,
+    goldrush,
+    lager,
+    cowboy,
+    jsx
+  ]},
+  {mod, { boot, []}},
+  {modules,[boot_cowboy_middleware]},
+  {env, []}
+]}.
